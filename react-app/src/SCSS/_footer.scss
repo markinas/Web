@@ -1,0 +1,51 @@
+@import 'grid';
+@import 'standart';
+footer{
+    @extend .footer-gr;
+    
+    height: 80px;
+    background-color: $col1;
+    padding: 0 5%;
+    .logoBlock{
+        @extend .logoBlockF-gr;
+        align-items: center;
+        text-align: center;
+        color: white;
+        /*font-family:monospace;*/
+        .logo{
+            @extend .logoF-gr;
+            align-items: center;
+          height: 60px;
+          width: 60px;
+          border-radius: 30px;
+          background: url("../img/logo2.PNG") no-repeat center;
+          background-size: cover;
+        }
+        img{
+            height: 60px;
+            border-radius: 40px;
+            margin: 0 auto;
+        }
+    }
+    .linkBlock{
+       @extend .linkBlockF-gr;
+        align-items: center;
+        div{
+            height: 25px;
+            width: 25px;
+            align-items: center;
+        }
+      .facebook{
+        background: url("../img/facebook.png") no-repeat center;
+        background-size: cover;
+      }
+      .instagram{
+        background: url("../img/instagram.png") no-repeat center;
+        background-size: cover;
+      }
+      .telegram{
+        background: url("../img/telegram.png") no-repeat center;
+        background-size: cover;
+      }
+    }
+}

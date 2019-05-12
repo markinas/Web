@@ -1,0 +1,31 @@
+$rowName1: "image title" "image descr";
+$rowName2: "title title" "image descr";
+$rowName3: "title image descr";
+$col1: #1B1F29;
+*{
+    margin: 0;
+    padding: 0;
+}
+.switch{
+    position: fixed;
+    right:10px;
+    top: 250px;
+    font-size: 2em;
+    background-color: $col1;
+    border: 2px solid darkgreen;
+    border-radius: 25px;
+    width: 50px;
+    text-align: center;
+    color: #ffffff;
+    div {
+        &:hover{
+            background-color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            color: $col1;
+        }
+        p{
+            padding: 5px 10px;
+        }
+    }
+}

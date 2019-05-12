@@ -1,0 +1,172 @@
+@import 'grid'; 
+@import 'standart';
+
+header{
+    display: flex;
+    height: 430px;
+    color: white;
+
+    .firstPart{
+        height:100%;
+        width: 40%;
+        background-color: $col1;
+        .firstRow{
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid white;
+            div{
+                align-self: center;
+            }
+            .logo{
+                background: url("../img/logo.png") no-repeat center;
+                background-size: cover;
+                height: 30px;
+                width: 200px;
+            }
+            .stick{
+                color: #00F395;
+            }
+
+        }
+        .secondRow{
+            height: 350px;
+            align-items: center;
+            font-size: 3em;
+            color: white;
+            .mainText{
+                margin: 100px 0 0 30%;
+                height: 200px;
+                width: 60%;
+                text-align: justify;
+                text-align-last: justify;
+                font-family: sans-serif;
+
+            }
+
+
+        }
+    }
+
+    .secondPart {
+        height: 100%;
+        width: 60%;
+        background: url("../img/slogan.jpg") no-repeat center;
+        background-size: cover;
+        .firstRow{
+            height: 80px;
+            border-bottom: 1px solid white;
+            display: flex;
+            .textBlock{
+                width: 80%;
+                display: flex;
+                justify-content: space-around;
+                div{
+                    width: 25%;
+                    align-self: center;
+                    padding: 10px;
+                    &:hover{
+                        background-color: rgba(111,239,158,0.4);
+                    }
+                }
+            }
+            .linkBlock{
+                width: 20%;
+                display: flex;
+                justify-content: space-around;
+                div{
+                    height: 25px;
+                    width: 25px;
+                    align-self: center;
+                }
+                .facebook{
+                    background: url("../img/facebook.png") no-repeat center;
+                    background-size: cover;
+                }
+                .instagram{
+                    background: url("../img/instagram.png") no-repeat center;
+                    background-size: cover;
+                }
+                .telegram{
+                    background: url("../img/telegram.png") no-repeat center;
+                    background-size: cover;
+                }
+            }
+
+        }
+        .secondRow{
+            height: 350px;
+
+        }
+    }
+    //
+    //.mainLine{
+    //    @extend .mainLine-gr;
+    //    height: 80px;
+    //
+    //    border-bottom: 1px solid white;
+    //    color: white;
+    //
+    //    font-family: sans-serif;
+    //    font-weight: 500;
+    //    .logoBlock{
+    //        @extend .logoBlock-gr;
+    //
+    //        text-align: center;
+    //        background-color: $col1;
+    //        align-items: center;
+    //        padding: 0 10%;
+    //        .stick{
+    //        color: #00F395;
+    //    }
+    //
+    //    }
+    //    .textBlock{
+    //        @extend .textBlockH-gr;
+    //        align-items: center;
+    //        text-align: center;
+    //        padding: 0 10%;
+    //
+    //
+    //    }
+    //
+    //    .logo img{
+    //        height: 30px;
+    //    }
+    //    .linkBlock{
+    //        @extend .linkBlock-gr;
+    //        align-items: center;
+    //
+    //        img{
+    //            width: 25px;
+    //            margin: auto;
+    //        }
+    //    }
+    //}
+    //.slider{
+    //    @extend .slider-gr;
+    //    height: 350px;
+    //    .textBlock{
+    //        background-color: $col1;
+    //        align-items: center;
+    //        font-size: 3em;
+    //        color: white;
+    //        .mainText{
+    //            margin: 100px 0 0 200px;
+    //            height: 200px;
+    //            width: 300px;
+    //            text-align: justify;
+    //            text-align-last: justify;
+    //            font-family: sans-serif;
+    //
+    //        }
+    //    }
+    //    img{
+    //        position: absolute;
+    //        width: 60%;
+    //        top:0px;
+    //        z-index: -1;
+    //        height: 430px;
+    //    }
+    //}
+}

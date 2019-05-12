@@ -1,0 +1,120 @@
+@import 'standart';
+/*-----HEADER-----*/
+.mainLine-gr{
+    display: grid;
+        grid-template-columns: 4fr 5fr 1fr;
+}
+.logoBlock-gr{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.textBlockH-gr{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.linkBlock-gr{
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.slider-gr{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+/*-----MAIN-----*/
+.pos1{
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: $rowName1;
+    grid-template-columns: 1fr 2fr;
+}
+.pos2{
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: $rowName2;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.pos3{
+    grid-template-rows: 1fr;
+    grid-template-areas: $rowName3;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-column-gap: 70px;
+}
+.textBlock-gr{
+    display: grid;
+    grid-gap: 10px;
+}
+.textBlock1-gr{
+    @extend .textBlock-gr;   
+}
+.photo-gr{
+    grid-row: image;
+    grid-column: image;  
+}
+.title-gr{
+    grid-row: title;
+    grid-column: title;
+}
+.description-gr{
+    grid-row: descr;
+        grid-column: descr;
+}
+.photoBlock-gr{
+        grid-row: image;
+        grid-column: image;
+}
+.textBlock2-gr{
+    @extend .textBlock-gr;
+    grid-template-areas: "title image" "descr image";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    
+}
+.textBlock3-gr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10%;
+}
+.infoBlock-gr{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.person-gr{
+    display: grid;
+    grid-template-rows: 300px 20px 70px;
+    grid-template-columns: 350px;
+}
+/*formS*/
+.formBlock-gr{
+    display: grid;
+    }
+.form-gr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 50px;
+    
+    .name, .email, .comm, .question, .buttUp, h3{
+        grid-column: span 2;
+    }
+   
+}
+/*formE*/
+/*-----FOOTER-----*/
+.footer-gr{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+.logoBlockF-gr{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.logoF-gr{
+    display: grid;
+}
+.linkBlockF-gr{
+     display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-start:  3;
+    div{
+        display: grid;
+    }
+}

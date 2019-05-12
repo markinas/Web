@@ -1,0 +1,768 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*-----HEADER-----*/
+.mainLine-gr, header .mainLine {
+  display: grid;
+  grid-template-columns: 4fr 5fr 1fr;
+}
+
+.logoBlock-gr, header .mainLine .logoBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.textBlockH-gr, header .mainLine .textBlock {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.linkBlock-gr, header .mainLine .linkBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.slider-gr, header .slider {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+/*-----MAIN-----*/
+.pos1 {
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: "image title" "image descr";
+  grid-template-columns: 1fr 2fr;
+}
+
+.pos2 {
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: "title title" "image descr";
+  grid-template-columns: 1fr 1fr;
+}
+
+.pos3 {
+  grid-template-rows: 1fr;
+  grid-template-areas: "title image descr";
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-column-gap: 70px;
+}
+
+.textBlock-gr, .textBlock1-gr, .textBlock1, .textBlock2-gr, .textBlock2 {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.photo-gr, .textBlock1 .photo {
+  grid-row: image;
+  grid-column: image;
+}
+
+.title-gr, .textBlock1 .title, .textBlock2 .title {
+  grid-row: title;
+  grid-column: title;
+}
+
+.description-gr, .textBlock1 .description, .textBlock2 .description {
+  grid-row: descr;
+  grid-column: descr;
+}
+
+.photoBlock-gr, .textBlock2 .photoBlock {
+  grid-row: image;
+  grid-column: image;
+}
+
+.textBlock2-gr, .textBlock2 {
+  grid-template-areas: "title image" "descr image";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+.textBlock3-gr, .textBlock3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.infoBlock-gr, .infoBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.person-gr, .infoBlock .person {
+  display: grid;
+  grid-template-columns: 300px 20xp 70px;
+}
+
+/*formS*/
+.formBlock-gr, .formsBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 200px;
+}
+
+.form-gr, .formsBlock form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
+}
+.form-gr .name, .formsBlock form .name, .form-gr .email, .formsBlock form .email, .form-gr .comm, .formsBlock form .comm, .form-gr .question, .formsBlock form .question, .form-gr .buttUp, .formsBlock form .buttUp, .form-gr h3, .formsBlock form h3 {
+  grid-column: span 2;
+}
+
+/*formE*/
+/*-----FOOTER-----*/
+.footer-gr, footer {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.logoBlockF-gr, footer .logoBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.logoF-gr, footer .logoBlock .logo {
+  display: grid;
+}
+
+.linkBlockF-gr, footer .linkBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-start: 3;
+}
+.linkBlockF-gr div, footer .linkBlock div {
+  display: grid;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*-----HEADER-----*/
+.mainLine-gr, header .mainLine {
+  display: grid;
+  grid-template-columns: 4fr 5fr 1fr;
+}
+
+.logoBlock-gr, header .mainLine .logoBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.textBlockH-gr, header .mainLine .textBlock {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.linkBlock-gr, header .mainLine .linkBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.slider-gr, header .slider {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+/*-----MAIN-----*/
+.pos1 {
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: "image title" "image descr";
+  grid-template-columns: 1fr 2fr;
+}
+
+.pos2 {
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: "title title" "image descr";
+  grid-template-columns: 1fr 1fr;
+}
+
+.pos3 {
+  grid-template-rows: 1fr;
+  grid-template-areas: "title image descr";
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-column-gap: 70px;
+}
+
+.textBlock-gr, .textBlock1-gr, .textBlock1, .textBlock2-gr, .textBlock2 {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.photo-gr, .textBlock1 .photo {
+  grid-row: image;
+  grid-column: image;
+}
+
+.title-gr, .textBlock1 .title, .textBlock2 .title {
+  grid-row: title;
+  grid-column: title;
+}
+
+.description-gr, .textBlock1 .description, .textBlock2 .description {
+  grid-row: descr;
+  grid-column: descr;
+}
+
+.photoBlock-gr, .textBlock2 .photoBlock {
+  grid-row: image;
+  grid-column: image;
+}
+
+.textBlock2-gr, .textBlock2 {
+  grid-template-areas: "title image" "descr image";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+.textBlock3-gr, .textBlock3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.infoBlock-gr, .infoBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.person-gr, .infoBlock .person {
+  display: grid;
+  grid-template-columns: 300px 20xp 70px;
+}
+
+/*formS*/
+.formBlock-gr, .formsBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 200px;
+}
+
+.form-gr, .formsBlock form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
+}
+.form-gr .name, .formsBlock form .name, .form-gr .email, .formsBlock form .email, .form-gr .comm, .formsBlock form .comm, .form-gr .question, .formsBlock form .question, .form-gr .buttUp, .formsBlock form .buttUp, .form-gr h3, .formsBlock form h3 {
+  grid-column: span 2;
+}
+
+/*formE*/
+/*-----FOOTER-----*/
+.footer-gr, footer {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.logoBlockF-gr, footer .logoBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.logoF-gr, footer .logoBlock .logo {
+  display: grid;
+}
+
+.linkBlockF-gr, footer .linkBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-start: 3;
+}
+.linkBlockF-gr div, footer .linkBlock div {
+  display: grid;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header .mainLine {
+  height: 80px;
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+header .mainLine .logoBlock {
+  text-align: center;
+  background-color: #1B1F29;
+  align-items: center;
+  padding: 0 10%;
+}
+header .mainLine .logoBlock .stick {
+  color: #00F395;
+}
+header .mainLine .textBlock {
+  align-items: center;
+  text-align: center;
+  padding: 0 10%;
+}
+header .mainLine .logo img {
+  height: 30px;
+}
+header .mainLine .linkBlock {
+  align-items: center;
+}
+header .mainLine .linkBlock img {
+  width: 25px;
+  margin: auto;
+}
+header .slider {
+  height: 350px;
+}
+header .slider .textBlock {
+  background-color: #1B1F29;
+  align-items: center;
+  font-size: 3em;
+  color: white;
+}
+header .slider .textBlock .mainText {
+  margin: 100px 0 0 200px;
+  height: 200px;
+  width: 300px;
+  text-align: justify;
+  text-align-last: justify;
+  font-family: sans-serif;
+}
+header .slider img {
+  position: absolute;
+  width: 60%;
+  top: 0px;
+  z-index: -1;
+  height: 430px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*-----HEADER-----*/
+.mainLine-gr, header .mainLine {
+  display: grid;
+  grid-template-columns: 4fr 5fr 1fr;
+}
+
+.logoBlock-gr, header .mainLine .logoBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.textBlockH-gr, header .mainLine .textBlock {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.linkBlock-gr, header .mainLine .linkBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.slider-gr, header .slider {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+/*-----MAIN-----*/
+.pos1 {
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: "image title" "image descr";
+  grid-template-columns: 1fr 2fr;
+}
+
+.pos2 {
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: "title title" "image descr";
+  grid-template-columns: 1fr 1fr;
+}
+
+.pos3 {
+  grid-template-rows: 1fr;
+  grid-template-areas: "title image descr";
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-column-gap: 70px;
+}
+
+.textBlock-gr, .textBlock1-gr, .textBlock1, .textBlock2-gr, .textBlock2 {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.photo-gr, .textBlock1 .photo {
+  grid-row: image;
+  grid-column: image;
+}
+
+.title-gr, .textBlock1 .title, .textBlock2 .title {
+  grid-row: title;
+  grid-column: title;
+}
+
+.description-gr, .textBlock1 .description, .textBlock2 .description {
+  grid-row: descr;
+  grid-column: descr;
+}
+
+.photoBlock-gr, .textBlock2 .photoBlock {
+  grid-row: image;
+  grid-column: image;
+}
+
+.textBlock2-gr, .textBlock2 {
+  grid-template-areas: "title image" "descr image";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+.textBlock3-gr, .textBlock3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.infoBlock-gr, .infoBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.person-gr, .infoBlock .person {
+  display: grid;
+  grid-template-columns: 300px 20xp 70px;
+}
+
+/*formS*/
+.formBlock-gr, .formsBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 200px;
+}
+
+.form-gr, .formsBlock form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
+}
+.form-gr .name, .formsBlock form .name, .form-gr .email, .formsBlock form .email, .form-gr .comm, .formsBlock form .comm, .form-gr .question, .formsBlock form .question, .form-gr .buttUp, .formsBlock form .buttUp, .form-gr h3, .formsBlock form h3 {
+  grid-column: span 2;
+}
+
+/*formE*/
+/*-----FOOTER-----*/
+.footer-gr, footer {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.logoBlockF-gr, footer .logoBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.logoF-gr, footer .logoBlock .logo {
+  display: grid;
+}
+
+.linkBlockF-gr, footer .linkBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-start: 3;
+}
+.linkBlockF-gr div, footer .linkBlock div {
+  display: grid;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.textBlock1 {
+  padding: 40px 15%;
+}
+.textBlock1 .photo {
+  width: 100%;
+}
+.textBlock1 .title {
+  font-size: 3em;
+  font-family: sans-serif;
+}
+.textBlock1 .description {
+  text-align: justify;
+}
+
+.textBlock2 {
+  padding: 40px 15%;
+}
+.textBlock2 .photoBlock {
+  width: 100%;
+  position: relative;
+}
+.textBlock2 .photoBlock img {
+  width: 300px;
+  position: absolute;
+}
+.textBlock2 .photoBlock .im1 {
+  top: -50px;
+  right: 0;
+  width: 380px;
+}
+.textBlock2 .photoBlock .im2 {
+  bottom: 0;
+}
+.textBlock2 .title {
+  font-size: 3em;
+  font-family: sans-serif;
+}
+.textBlock2 .description {
+  text-align: justify;
+}
+
+.textBlock3 {
+  background-color: black;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.infoBlock {
+  padding: 40px 10%;
+  align-items: center;
+}
+.infoBlock img {
+  height: 300px;
+}
+.infoBlock .title {
+  font-size: 3em;
+  font-weight: 1000;
+  font-family: sans-serif;
+}
+.infoBlock .person .perTitle {
+  font-weight: 800;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.formsBlock {
+  padding: 20px 10%;
+}
+.formsBlock h3 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+.formsBlock input, .formsBlock textarea {
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid grey;
+  font-size: 1.2em;
+}
+.formsBlock textarea {
+  resize: vertical;
+  font-size: 1.5em;
+  font-weight: 400;
+  height: 80px;
+  padding: 2% 0;
+}
+.formsBlock .buttUp {
+  margin: 20px auto;
+}
+.formsBlock .butt {
+  margin: 0 auto;
+  /*background-color: $col1;*/
+  background-color: #1B1F29;
+  width: 180px;
+  height: 60px;
+  font-family: monospace;
+  font-size: 1.7em;
+  color: white;
+}
+.formsBlock .form2 .butt {
+  width: 400px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*-----HEADER-----*/
+.mainLine-gr, header .mainLine {
+  display: grid;
+  grid-template-columns: 4fr 5fr 1fr;
+}
+
+.logoBlock-gr, header .mainLine .logoBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.textBlockH-gr, header .mainLine .textBlock {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.linkBlock-gr, header .mainLine .linkBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.slider-gr, header .slider {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+/*-----MAIN-----*/
+.pos1 {
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: "image title" "image descr";
+  grid-template-columns: 1fr 2fr;
+}
+
+.pos2 {
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: "title title" "image descr";
+  grid-template-columns: 1fr 1fr;
+}
+
+.pos3 {
+  grid-template-rows: 1fr;
+  grid-template-areas: "title image descr";
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-column-gap: 70px;
+}
+
+.textBlock-gr, .textBlock1-gr, .textBlock1, .textBlock2-gr, .textBlock2 {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.photo-gr, .textBlock1 .photo {
+  grid-row: image;
+  grid-column: image;
+}
+
+.title-gr, .textBlock1 .title, .textBlock2 .title {
+  grid-row: title;
+  grid-column: title;
+}
+
+.description-gr, .textBlock1 .description, .textBlock2 .description {
+  grid-row: descr;
+  grid-column: descr;
+}
+
+.photoBlock-gr, .textBlock2 .photoBlock {
+  grid-row: image;
+  grid-column: image;
+}
+
+.textBlock2-gr, .textBlock2 {
+  grid-template-areas: "title image" "descr image";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+.textBlock3-gr, .textBlock3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.infoBlock-gr, .infoBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.person-gr, .infoBlock .person {
+  display: grid;
+  grid-template-columns: 300px 20xp 70px;
+}
+
+/*formS*/
+.formBlock-gr, .formsBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 200px;
+}
+
+.form-gr, .formsBlock form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
+}
+.form-gr .name, .formsBlock form .name, .form-gr .email, .formsBlock form .email, .form-gr .comm, .formsBlock form .comm, .form-gr .question, .formsBlock form .question, .form-gr .buttUp, .formsBlock form .buttUp, .form-gr h3, .formsBlock form h3 {
+  grid-column: span 2;
+}
+
+/*formE*/
+/*-----FOOTER-----*/
+.footer-gr, footer {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.logoBlockF-gr, footer .logoBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.logoF-gr, footer .logoBlock .logo {
+  display: grid;
+}
+
+.linkBlockF-gr, footer .linkBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-start: 3;
+}
+.linkBlockF-gr div, footer .linkBlock div {
+  display: grid;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  height: 80px;
+  background-color: #1B1F29;
+  padding: 0 5%;
+}
+footer .logoBlock {
+  align-items: center;
+  text-align: center;
+  color: white;
+  /*font-family:monospace;*/
+}
+footer .logoBlock .logo {
+  align-items: center;
+}
+footer .logoBlock img {
+  height: 60px;
+  border-radius: 40px;
+  margin: 0 auto;
+}
+footer .linkBlock {
+  align-items: center;
+}
+footer .linkBlock div {
+  align-items: center;
+}
+footer .linkBlock img {
+  height: 25px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */
